@@ -1,0 +1,38 @@
+<meta charset="utf-8">
+
+<h1>"Promedio de edades de una Familia"</h1>
+
+<script type="text/javascript">
+	
+	function salto(){
+		document.write("<br>")
+		document.write("<br>")
+	}
+
+	function imprimir(frase){
+		document.write(frase)
+		salto()
+	}
+
+	var totalmienbros= parseInt(prompt("¿Cuantos mienbros tiene su familia?"));
+
+	var i = 1;
+	var totaledad= 0;
+	while(i <= totalmienbros){
+		
+		edad = parseInt( prompt ("Ingrese la edad de el mienbro"));
+		totaledad= totaledad+edad;
+		//imprimir(totaledad)
+		i++;
+
+	}
+	
+	imprimir("La edad media de los miembros de la familia es:" +totaledad/totalmienbros)
+	imprimir("Fin")
+	/*
+	var edadpadre = 54;
+	var edadmadre = 52;
+	var edadhija = 27;
+	var edadhijo = 20;*/
+
+</script>

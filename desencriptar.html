@@ -1,0 +1,101 @@
+<meta charset="utf-8">
+<h1>Challange de encriptador</h1>
+<textarea id="mitextarea" rows="2" cols="15"></textarea>
+<button type="submit" onclick="encriptar(this)">Encriptar</button>
+<button>Desencriptar</button>
+<p id="prueba"></p>
+<script type="text/javascript">
+
+document.getElementById('mitextarea').focus();
+
+
+function comprovar(frase){
+	var str = false;
+	var cantidad= 0;
+
+	var areadetexto= document.getElementsByTagName('textarea')[0].value;
+
+	cantidad= areadetexto.length;
+
+	if (areadetexto.value=="string"){
+		str=true
+	}
+
+	return(cantidad,str)
+
+}
+
+function reconocimiento(bol,num){
+	resultado=areadetexto.replace(/a/g "ai")
+	document.write(resultado)
+}
+
+
+function encriptar(elemento){
+
+	//var areadetexto= document.getElementsByTagName('textarea')[0].value;
+
+	//var resultado= areadetexto.replace("a", "ai");
+	//resultado= resultado.replace("o", "ober");
+
+
+	//document.write(resultado)
+
+	//document.write(areadetexto.length+"")
+	/*
+
+
+	//recorre cada letra del arreglo para comenzar a encriptar
+	for (var i = 0; i < areadetexto.length; i++) {
+		if (areadetexto[i]== "a"){
+
+			var resultado = areadetexto.replace("a","ai");
+
+			document.write("EL texto contienen una `A`<br>" + resultado);
+
+		}
+		else if (areadetexto[i]== "e"){
+			
+			resultado = areadetexto.replace("e","enter");
+			
+			document.write("EL texto contienen una `E`<br>" + resultado);
+				
+		}
+		else if (areadetexto[i]== "i"){
+			
+			//textarea[i] = "imes";
+			resultado = areadetexto.replace("i","imes");
+			
+			document.write("EL texto contienen una `I`<br>" + resultado);
+			
+		}
+		else if (areadetexto[i]== "o"){
+			
+			//textarea[i] = "ober";
+			nq = areadetexto.replace("o","ober");
+
+			document.write("EL texto contienen una `O`<br>" + nq);
+			
+			
+		}
+		else if (areadetexto[i]== "u"){
+			
+			//textarea[i] = "ufat";
+			resultado = areadetexto.replace("u","ufat");
+
+			document.write("EL texto contienen una `U`<br>" + resultado);
+			
+			
+		}
+		else{
+			
+			document.write("");
+		}*/
+	}
+	//document.log(areadetexto);
+	//document.getElementById('prueba').innerHTML=areadetexto;
+
+
+
+</script>
+

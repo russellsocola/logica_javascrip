@@ -1,0 +1,38 @@
+<meta charset="utf-8">
+<h1>Tabla de multiplicar</h1>
+
+
+<script type="text/javascript">
+	
+	function saltar(){
+
+		document.write("<br>");
+		document.write("<br>");
+	}
+
+	function imprimir(frase){
+
+		document.write(frase);
+		saltar()
+	}
+	
+	var multipo= 1;
+	var num= parseInt(prompt(document.write("Ingrese numero:")));
+	
+	imprimir("While");
+
+	 //proceso while
+	while (multipo <= 12) {
+
+		imprimir("La multiplicacion de "+ num +" x " + multipo+ " es : " +num * multipo);
+		multipo= multipo+1;
+	}
+	//proceso for
+	imprimir("For")
+
+	for (var i = 1; i <= 12; i++) {
+
+		imprimir("La multiplicacion de "+ num +" x " + i+ " es : " +num * i);
+	}
+
+</script>

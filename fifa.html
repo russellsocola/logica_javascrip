@@ -1,0 +1,27 @@
+<meta charset="utf-8">
+<h1>Anhos de el mundial</h1>
+
+<script type="text/javascript">
+	
+	function saltarlinea(){
+		
+		document.write("<br>");
+		document.write("<br>");
+	}
+
+	function imprimir(frase){
+
+		document.write(frase);
+		saltarlinea();
+	}
+
+	var anho= 1930;
+	var limite = parseInt(prompt("Ingrese el anho:"))
+
+	while (anho < limite) {
+
+		imprimir("Hubo un mundial de la Fifa en el anho "+anho);
+		anho = anho + 4 ;
+	}
+	imprimir("Fin")
+</script>

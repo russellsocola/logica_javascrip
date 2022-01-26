@@ -1,0 +1,38 @@
+<meta charset="utf-8">
+<h1>Juego de Adivinacion</h1>
+
+<script type="text/javascript">
+	
+	function saltarlinea(){
+		document.write("<br>");
+		document.write("<br>");
+
+	}
+	function imprimir(frase){
+		document.write(frase)
+		saltarlinea()
+	}
+	
+	imprimir("**********");
+	imprimir("**********");
+	imprimir("**********");
+	imprimir("<hr>");
+	//for simple
+
+	for (var i = 0; i < 3; i++) {
+		imprimir("**********");
+	}
+	document.write("<hr>")
+
+	//for anidado
+
+	for (var i = 0; i <3; i++) {//numero de filas
+		for (var j = 0; j < 10; j++) {//numero de columnas
+			document.write("*");
+		}
+		imprimir("");
+	}
+
+	imprimir("Fin");
+
+</script>

@@ -1,0 +1,57 @@
+
+<head>
+	<meta charset="utf-8">
+	<title>Encriptado y desencriptado</title>
+
+</head>
+<body>
+
+	<form>
+		<label for="itext">Ingrese Texto:</label>
+		<input id="itext" type="text"/>
+		<br>
+		<button type="submit" onclick="encriptar(this)">Encriptar</button>
+		<button type="submit" onclick="desencriptar(this)">Desencriptar</button>
+		<br>
+		<textarea id="resultado"></textarea>
+		<button onclick="copiarporta();">Copiar</button>
+	</form>
+
+	<script type="text/javascript">
+		
+		function encriptar(elemento) {
+
+			var palabra = document.getElementsByTagName('input')[0].value;
+
+			var palabra_codificada1= palabra.replace(/e/g,"enter");
+			var palabra_codificada2= palabra_codificada1.replace(/i/g,"imes");
+			var palabra_codificada3= palabra_codificada2 .replace(/a/g,"ai");
+			var palabra_codificada4= palabra_codificada3 .replace(/o/g,"ober");
+			var palabra_codificada5= palabra_codificada4 .replace(/u/g,"ufat");
+			document.getElementById('resultado').innerHTML =  palabra_codificada5; 
+		}
+
+		function desencriptar(elemento){
+			//metodo 1
+			var palabra = document.getElementsByTagName('input')[0].value;
+			//var palabra_codificada = atob(palabra);
+			var palabra_codificada1= palabra.replace(/enter/g,"e");
+			var palabra_codificada2= palabra_codificada1.replace(/imes/g,"i");
+			var palabra_codificada3= palabra_codificada2 .replace(/ai/g,"a");
+			var palabra_codificada4= palabra_codificada3 .replace(/ober/g,"o");
+			var palabra_codificada5= palabra_codificada4 .replace(/ufat/g,"u");
+			document.getElementById('resultado').innerHTML =  palabra_codificada5;
+		}
+
+		function copiarporta(){
+			var texto= document.getElementById("resultado");
+			texto.selec();
+			texto.setSelectionRange(0, 99999);
+			document.execCommand("copy");
+		}
+
+
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+<meta charset="utf-8">
+<h1>Juego de Adivinacion</h1>
+
+<script type="text/javascript">
+	
+	function saltarlinea(){
+		document.write("<br>");
+		document.write("<br>");
+
+	}
+	function imprimir(frase){
+		document.write(frase)
+		saltarlinea()
+	}
+	
+	var num_pc;
+	var num_user;
+	var contador=1;
+	var intentos=3;
+	num_pc= Math.floor(Math.random()*10)
+
+	imprimir("El numero pensado era:"+num_pc);
+	
+
+	while (contador <= intentos){
+		num_user= parseInt(prompt("Digita"))
+			imprimir(num_user);
+	
+
+		if ( num_pc == num_user){
+			alert("Felicidades eres un adivinoo!! Acertaste en el intento:"+contador);
+			break;
+		}else{
+			alert("F en el chat");
+		}
+		contador++;
+	}
+
+</script>

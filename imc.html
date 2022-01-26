@@ -1,0 +1,54 @@
+<meta charset="utf-8">
+
+<h1>Progrma IMC</h1>
+
+<script type="text/javascript">
+	
+	function saltarlinea(){
+
+		document.write("<br>")
+		document.write("<br>")
+		document.write("<br>")
+		document.write("<hr>")
+
+	}
+
+	function imprimir(frase){
+
+		document.write(frase);
+		saltarlinea();
+	}
+
+	function rangoimc(num){
+		if (imc<18.5){
+			imprimir("Bajo de peso")
+		}else if (num<24.9){
+			imprimir("Normal")
+		}else if (num<26.9){
+			imprimir("Sobre peso 1")
+		}else if (num<29.9){
+			imprimir("Sobre peso 2")
+		}else if (num<35){
+			imprimir("Sobre peso 3")
+		}else{
+			imprimir("Sobre peso extremo")
+		}
+
+	}
+	
+	function calcularIMC (peso, altura,nombre){
+
+		imc = peso/(altura*altura);
+		
+		imprimir("El IMC calculado de "+ nombre +" es : "+ imc);
+		rangoimc(imc);
+
+	}
+	//proceso
+	calcularIMC(85, 1.75, "Russell");
+	//calcularIMC(93, 1.73, "Juana" );
+	//calcularIMC(100, 3.1, "Julieto");
+	ingresepeso= prompt("ingrese su peso");
+	calcularIMC(ingresepeso,1.75,"Usuario");
+	
+</script>

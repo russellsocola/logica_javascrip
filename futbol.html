@@ -1,0 +1,42 @@
+<meta charet="UTF-8">
+<h1>Programa - Calcular Puntos de su equipo de futbol</h1>
+
+<script type="text/javascript">
+	
+	function salto(){
+		document.write("<br>");
+		document.write("<br>");
+		document.write("<br>")
+	}
+
+	function imprimir(frase){
+		document.write(frase);
+		salto();
+	}
+
+	/*function scaner(victoria, empate){
+		prompt()
+		
+		return(PuntosTotal)
+	}*/
+
+	//podemos usar la funcion parseInt para transformar variables de texto a numero
+	var victoria = parseInt(prompt("Informe la cantidad de victorias"));
+	var empate = parseInt(prompt("Informe la cantidad de empates"));
+
+	//
+	var puntosTotal= (victoria*3)+(1*empate);//miltiplico el texto por un numero para que js lo transforme en un numero 
+	imprimir("La cantiddad total de puntos acumulados es de :" + puntosTotal);
+
+	if (puntosTotal>28){
+		 imprimir("El equipo esta mejor que el anho pasado");
+	}else if(puntosTotal <28){
+		imprimir("El equipo esta peor que el anho pasado");
+	}else if(puntosTotal==28){
+		imprimir("El equipo esta iguañ que el anho pasado");
+	}
+
+	
+
+
+</script>
